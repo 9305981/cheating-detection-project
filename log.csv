@@ -1,0 +1,33 @@
+Timestamp,Event
+2025-06-17 15:36:42,Looking Center
+2025-06-17 15:37:03,No Face Detected
+2025-06-17 15:37:05,Looking Center
+2025-06-17 15:37:13,No Face Detected
+2025-06-17 15:37:14,Looking Center
+2025-06-17 15:40:59,Face Left
+2025-06-17 15:41:05,Face Right
+2025-06-17 15:41:17,Face Right
+2025-06-17 15:44:40,Face Left
+2025-06-17 15:44:44,Face Left
+2025-06-17 15:44:55,Face Left
+2025-06-17 15:45:01,Multiple faces detected.
+2025-06-17 15:45:21,Face Left
+2025-06-17 15:45:25,Multiple faces detected.
+2025-06-17 15:45:29,Face Left
+2025-06-17 15:45:33,Multiple faces detected.
+2025-06-17 15:45:38,Face Left
+2025-06-17 15:45:42,Face Left
+2025-06-17 15:52:48,Face Not Centered - left
+2025-06-17 16:01:07,Face Not Centered - right
+2025-06-17 16:01:32,Face Not Centered - right
+2025-06-17 16:03:13,Face Not Centered - right
+2025-06-17 16:09:02,Multiple faces detected
+2025-06-17 16:09:15,Face not centered
+2025-06-17 16:25:38,Face too left
+2025-06-17 16:25:44,Face too right
+2025-06-17 16:25:53,Face too left
+2025-06-17 16:33:00,Face too left
+2025-06-17 16:33:12,Face too left
+2025-06-17 16:33:17,Face too right
+2025-06-17 16:37:00,Face too right
+2025-06-17 16:37:11,Face too left

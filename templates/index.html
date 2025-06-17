@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cheating Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Cheating Detection System</h1>
+        <button onclick="startDetection()">▶️ Start Detection</button>
+        <button onclick="location.href='/download'">📥 Download Logs</button>
+
+        <div id="status" class="hidden">⚙️ Initializing detection...</div>
+        <div id="logs" class="logs hidden">
+            <h2>📋 Live Logs</h2>
+            <div id="logContainer">Waiting for logs...</div>
+        </div>
+    </div>
+
+    <script>
+        function startDetection() {
+            document.getElementById("status").classList.remove("hidden");
+            document.getElementById("logs").classList.remove("hidden");
+
+            fetch("/start")
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("status").innerText = "✅ " + data.message;
+                    fetchLogs();
+                    setInterval(fetchLogs, 5000);
+                });
+        }
+
+        function fetchLogs() {
+            fetch("/get_logs")
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("logContainer").innerHTML =
+                        data.logs.map(line => `<div>📍 ${line}</div>`).join("");
+                });
+        }
+    </script>
+</body>
+</html>
